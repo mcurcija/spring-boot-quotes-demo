@@ -1,0 +1,9 @@
+server:
+  servlet:
+    context-path: "/quotes"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
