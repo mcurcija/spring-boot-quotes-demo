@@ -85,7 +85,7 @@ public class HttpClientConfig {
  
         PoolingHttpClientConnectionManager poolingConnectionManager = new PoolingHttpClientConnectionManager(socketFactoryRegistry);
         poolingConnectionManager.setMaxTotal(MAX_TOTAL_CONNECTIONS);
-        // poolingConnectionManager.setDefaultMaxPerRoute(MAX_TOTAL_CONNECTIONS);
+        poolingConnectionManager.setDefaultMaxPerRoute(MAX_TOTAL_CONNECTIONS);
         return poolingConnectionManager;
     }
  
